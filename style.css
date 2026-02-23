@@ -1,0 +1,297 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b);
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --text-light: #f1f5f9;
+  --text-muted: #94a3b8;
+  --radius: 14px;
+  --transition: all 0.25s ease;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--text-light);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 95%;
+  max-width: 650px;
+  padding: 30px;
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+/* =========================
+   SCREENS
+========================= */
+
+.screen {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   TITLES
+========================= */
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--primary);
+  color: white;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: var(--primary-dark);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   ANSWERS
+========================= */
+
+#answers button {
+  text-align: left;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+#answers button.correct {
+  background-color: var(--success);
+  animation: pulseCorrect 0.4s ease;
+}
+
+#answers button.wrong {
+  background-color: var(--danger);
+  animation: shake 0.3s ease;
+}
+
+@keyframes pulseCorrect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+/* =========================
+   SCORE
+========================= */
+
+#score {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--success);
+}
+
+/* =========================
+   REVIEW SECTION
+========================= */
+
+#review-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding-right: 8px;
+}
+
+.review-item {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 14px;
+  border-left: 4px solid var(--danger);
+}
+
+.review-item p {
+  margin-bottom: 6px;
+}
+
+.correct {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.wrong {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* =========================
+   SCROLLBAR MODERNA
+========================= */
+
+#review-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#review-list::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  #question {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   START SCREEN FORM
+========================= */
+
+#start-screen input,
+#start-screen select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-light);
+  font-size: 14px;
+  transition: var(--transition);
+  outline: none;
+}
+
+/* Corrigir cor das opções do select */
+#start-screen select option {
+  background-color: #1e293b; /* fundo escuro */
+  color: #f1f5f9;            /* texto claro */
+}
+
+/* Placeholder */
+#start-screen input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Focus effect */
+#start-screen input:focus,
+#start-screen select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* Select custom arrow */
+#start-screen select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23f1f5f9' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Group spacing */
+#start-screen .form-group {
+  margin-bottom: 12px;
+}
+
+/* Label style */
+#start-screen label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: var(--text-muted);
+}
+
+/* Start button destaque */
+#start-btn {
+  margin-top: 18px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+#start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}

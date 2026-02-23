@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Bíblico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Bíblico</h1>
+      <div id="start-screen">
+        <input type="text" id="player-name" placeholder="Digite seu nome" />
+
+        <h3>Dificuldade:</h3>
+        <select id="difficulty">
+          <option value="all">Todas</option>
+          <option value="facil">Fácil</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="avancado">Avançado</option>
+          <option value="especialista">Especialista</option>
+        </select>
+
+        <h3>Testamento:</h3>
+        <select id="testament">
+          <option value="all">Todos</option>
+          <option value="AT">Antigo Testamento</option>
+          <option value="NT">Novo Testamento</option>
+        </select>
+
+        <h3>Livro:</h3>
+        <select id="book">
+          <option value="all">Todos</option>
+        </select>
+
+        <h3>Quantidade de perguntas:</h3>
+        <input type="number" id="question-limit" min="1" placeholder="Ex: 10" />
+
+        <button id="start-btn">Iniciar</button>
+      </div>
+      <div id="quiz-screen" class="hidden">
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="answers"></div>
+        </div>
+        <p>Pontuação: <span id="score">0</span></p>
+        <button id="next-question" class="hidden">Próxima</button>
+        <button id="finish-btn" class="finish">Encerrar Quiz</button>
+      </div>
+      <div id="end-screen" class="hidden">
+        <h2>Relatório Final</h2>
+
+        <p>Jogador: <strong id="player-result"></strong></p>
+        <p>Pontuação: <strong id="final-score"></strong></p>
+        <p>Acertos: <strong id="total-correct"></strong></p>
+        <p>Erros: <strong id="total-wrong"></strong></p>
+
+        <h3>Revisão das Questões</h3>
+        <div id="review-list"></div>
+
+        <button id="restart-btn">Jogar Novamente</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

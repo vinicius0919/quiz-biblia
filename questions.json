@@ -1,0 +1,594 @@
+[
+  {
+    "id": 1,
+    "question": "Quem construiu a arca?",
+    "book": "Gênesis",
+    "testament": "AT",
+    "level": "facil",
+    "answers": [
+      { "id": 1, "text": "Moisés", "correct": false },
+      { "id": 2, "text": "Noé", "correct": true },
+      { "id": 3, "text": "Abraão", "correct": false },
+      { "id": 4, "text": "Davi", "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Quem liderou o povo de Israel na saída do Egito?",
+    "book": "Êxodo",
+    "testament": "AT",
+    "level": "facil",
+    "answers": [
+      { "id": 1, "text": "Josué", "correct": false },
+      { "id": 2, "text": "Moisés", "correct": true },
+      { "id": 3, "text": "Arão", "correct": false },
+      { "id": 4, "text": "Samuel", "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Qual discípulo negou Jesus três vezes?",
+    "book": "Mateus",
+    "testament": "NT",
+    "level": "facil",
+    "answers": [
+      { "id": 1, "text": "Pedro", "correct": true },
+      { "id": 2, "text": "João", "correct": false },
+      { "id": 3, "text": "Tomé", "correct": false },
+      { "id": 4, "text": "André", "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Qual era a profissão de Mateus antes de seguir Jesus?",
+    "book": "Mateus",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Pescador", "correct": false },
+      { "id": 2, "text": "Cobrador de impostos", "correct": true },
+      { "id": 3, "text": "Fariseu", "correct": false },
+      { "id": 4, "text": "Soldado romano", "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Quem sucedeu Moisés na liderança de Israel?",
+    "book": "Josué",
+    "testament": "AT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Calebe", "correct": false },
+      { "id": 2, "text": "Josué", "correct": true },
+      { "id": 3, "text": "Arão", "correct": false },
+      { "id": 4, "text": "Samuel", "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Qual profeta confrontou o rei Davi após seu pecado com Bate-Seba?",
+    "book": "2 Samuel",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Natã", "correct": true },
+      { "id": 2, "text": "Samuel", "correct": false },
+      { "id": 3, "text": "Elias", "correct": false },
+      { "id": 4, "text": "Isaías", "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Qual livro relata a reconstrução dos muros de Jerusalém?",
+    "book": "Neemias",
+    "testament": "AT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Esdras", "correct": false },
+      { "id": 2, "text": "Neemias", "correct": true },
+      { "id": 3, "text": "Crônicas", "correct": false },
+      { "id": 4, "text": "Josué", "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Qual é o menor versículo da Bíblia?",
+    "book": "João",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Jesus chorou.", "correct": true },
+      { "id": 2, "text": "Orai sem cessar.", "correct": false },
+      { "id": 3, "text": "Deus é amor.", "correct": false },
+      { "id": 4, "text": "Vigiai e orai.", "correct": false }
+    ]
+  },
+
+  {
+    "id": 9,
+    "question": "Qual profeta teve a visão do vale de ossos secos?",
+    "book": "Ezequiel",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Daniel", "correct": false },
+      { "id": 2, "text": "Ezequiel", "correct": true },
+      { "id": 3, "text": "Isaías", "correct": false },
+      { "id": 4, "text": "Jeremias", "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Em qual carta encontramos a descrição da armadura de Deus?",
+    "book": "Efésios",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Romanos", "correct": false },
+      { "id": 2, "text": "Efésios", "correct": true },
+      { "id": 3, "text": "Gálatas", "correct": false },
+      { "id": 4, "text": "Hebreus", "correct": false }
+    ]
+  },
+
+  {
+    "id": 11,
+    "question": "Qual profeta declarou: 'O justo viverá pela fé'?",
+    "book": "Habacuque",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Habacuque", "correct": true },
+      { "id": 2, "text": "Ageu", "correct": false },
+      { "id": 3, "text": "Naum", "correct": false },
+      { "id": 4, "text": "Sofonias", "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Qual era o nome romano do apóstolo Paulo?",
+    "book": "Atos",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Saulo", "correct": false },
+      { "id": 2, "text": "Paulo", "correct": true },
+      { "id": 3, "text": "Silas", "correct": false },
+      { "id": 4, "text": "Barnabé", "correct": false }
+    ]
+  },
+
+  {
+    "id": 13,
+    "question": "Qual rei encontrou o Livro da Lei durante a reforma religiosa?",
+    "book": "2 Reis",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Josias", "correct": true },
+      { "id": 2, "text": "Manassés", "correct": false },
+      { "id": 3, "text": "Ezequias", "correct": false },
+      { "id": 4, "text": "Acaz", "correct": false }
+    ]
+  },
+
+  {
+    "id": 14,
+    "question": "Quem foi arrebatado ao céu em um redemoinho?",
+    "book": "2 Reis",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Elias", "correct": true },
+      { "id": 2, "text": "Eliseu", "correct": false },
+      { "id": 3, "text": "Enoque", "correct": false },
+      { "id": 4, "text": "Isaías", "correct": false }
+    ]
+  },
+
+  {
+    "id": 15,
+    "question": "Qual igreja recebeu as cartas às sete igrejas do Apocalipse primeiro?",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Esmirna", "correct": false },
+      { "id": 2, "text": "Éfeso", "correct": true },
+      { "id": 3, "text": "Laodiceia", "correct": false },
+      { "id": 4, "text": "Pérgamo", "correct": false }
+    ]
+  },
+    {
+    "id": 16,
+    "question": "Qual juiz de Israel fez um voto precipitado envolvendo sua filha?",
+    "book": "Juízes",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Sansão", "correct": false },
+      { "id": 2, "text": "Gideão", "correct": false },
+      { "id": 3, "text": "Jefté", "correct": true },
+      { "id": 4, "text": "Débora", "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Qual rei babilônico teve um sonho com uma grande árvore que foi cortada?",
+    "book": "Daniel",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Belsazar", "correct": false },
+      { "id": 2, "text": "Nabucodonosor", "correct": true },
+      { "id": 3, "text": "Dario", "correct": false },
+      { "id": 4, "text": "Ciro", "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Quem foi o sumo sacerdote que julgou Jesus antes de Ele ser levado a Pilatos?",
+    "book": "Mateus",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Anás", "correct": false },
+      { "id": 2, "text": "Caifás", "correct": true },
+      { "id": 3, "text": "Gamaliel", "correct": false },
+      { "id": 4, "text": "Zacarias", "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Qual profeta foi instruído a casar-se com uma mulher infiel como símbolo da infidelidade de Israel?",
+    "book": "Oséias",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Amós", "correct": false },
+      { "id": 2, "text": "Oséias", "correct": true },
+      { "id": 3, "text": "Miqueias", "correct": false },
+      { "id": 4, "text": "Jeremias", "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Qual apóstolo foi martirizado por volta do ano 44 d.C., morto à espada?",
+    "book": "Atos",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Pedro", "correct": false },
+      { "id": 2, "text": "Tiago, filho de Zebedeu", "correct": true },
+      { "id": 3, "text": "João", "correct": false },
+      { "id": 4, "text": "André", "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Qual rei de Judá adoeceu gravemente e teve sua vida prolongada por mais 15 anos?",
+    "book": "2 Reis",
+    "testament": "AT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Josias", "correct": false },
+      { "id": 2, "text": "Ezequias", "correct": true },
+      { "id": 3, "text": "Manassés", "correct": false },
+      { "id": 4, "text": "Acaz", "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "Em qual cidade Paulo pregou no Areópago?",
+    "book": "Atos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Corinto", "correct": false },
+      { "id": 2, "text": "Éfeso", "correct": false },
+      { "id": 3, "text": "Atenas", "correct": true },
+      { "id": 4, "text": "Filipos", "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Qual salmo começa com a declaração: 'O Senhor é o meu pastor'?",
+    "book": "Salmos",
+    "testament": "AT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Salmo 19", "correct": false },
+      { "id": 2, "text": "Salmo 23", "correct": true },
+      { "id": 3, "text": "Salmo 91", "correct": false },
+      { "id": 4, "text": "Salmo 119", "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Quem foi o primeiro mártir cristão?",
+    "book": "Atos",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Tiago", "correct": false },
+      { "id": 2, "text": "Estêvão", "correct": true },
+      { "id": 3, "text": "Paulo", "correct": false },
+      { "id": 4, "text": "Barnabé", "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Qual profeta anunciou o nascimento do Messias em Belém?",
+    "book": "Miqueias",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Isaías", "correct": false },
+      { "id": 2, "text": "Jeremias", "correct": false },
+      { "id": 3, "text": "Miqueias", "correct": true },
+      { "id": 4, "text": "Zacarias", "correct": false }
+    ]
+  },
+  [
+  {
+    "id": 26,
+    "question": "Em qual carta Paulo afirma: 'O salário do pecado é a morte'?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Gálatas", "correct": false },
+      { "id": 2, "text": "Romanos", "correct": true },
+      { "id": 3, "text": "Efésios", "correct": false },
+      { "id": 4, "text": "Hebreus", "correct": false }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Em qual carta Paulo trata extensivamente sobre os dons espirituais no capítulo 12?",
+    "book": "1 Coríntios",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Romanos", "correct": false },
+      { "id": 2, "text": "1 Coríntios", "correct": true },
+      { "id": 3, "text": "Efésios", "correct": false },
+      { "id": 4, "text": "Colossenses", "correct": false }
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Qual carta contém o famoso capítulo sobre o amor (capítulo 13)?",
+    "book": "1 Coríntios",
+    "testament": "NT",
+    "level": "facil",
+    "answers": [
+      { "id": 1, "text": "Romanos", "correct": false },
+      { "id": 2, "text": "1 Coríntios", "correct": true },
+      { "id": 3, "text": "Efésios", "correct": false },
+      { "id": 4, "text": "Filipenses", "correct": false }
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Em qual carta Paulo repreende Pedro por sua atitude em Antioquia?",
+    "book": "Gálatas",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Romanos", "correct": false },
+      { "id": 2, "text": "Gálatas", "correct": true },
+      { "id": 3, "text": "Tito", "correct": false },
+      { "id": 4, "text": "2 Coríntios", "correct": false }
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Qual carta declara que Cristo 'se esvaziou a si mesmo, assumindo a forma de servo'?",
+    "book": "Filipenses",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Colossenses", "correct": false },
+      { "id": 2, "text": "Filipenses", "correct": true },
+      { "id": 3, "text": "Efésios", "correct": false },
+      { "id": 4, "text": "1 Tessalonicenses", "correct": false }
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Em qual carta Paulo afirma: 'Posso todas as coisas naquele que me fortalece'?",
+    "book": "Filipenses",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "Efésios", "correct": false },
+      { "id": 2, "text": "Filipenses", "correct": true },
+      { "id": 3, "text": "Romanos", "correct": false },
+      { "id": 4, "text": "Gálatas", "correct": false }
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Qual carta enfatiza Cristo como a imagem do Deus invisível e cabeça da igreja?",
+    "book": "Colossenses",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "Efésios", "correct": false },
+      { "id": 2, "text": "Colossenses", "correct": true },
+      { "id": 3, "text": "Romanos", "correct": false },
+      { "id": 4, "text": "2 Timóteo", "correct": false }
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Em qual carta Paulo orienta sobre a ressurreição e a volta de Cristo aos tessalonicenses?",
+    "book": "1 Tessalonicenses",
+    "testament": "NT",
+    "level": "avancado",
+    "answers": [
+      { "id": 1, "text": "2 Coríntios", "correct": false },
+      { "id": 2, "text": "1 Tessalonicenses", "correct": true },
+      { "id": 3, "text": "Efésios", "correct": false },
+      { "id": 4, "text": "Romanos", "correct": false }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Qual carta contém a declaração: 'Combati o bom combate, terminei a corrida, guardei a fé'?",
+    "book": "2 Timóteo",
+    "testament": "NT",
+    "level": "intermediario",
+    "answers": [
+      { "id": 1, "text": "1 Timóteo", "correct": false },
+      { "id": 2, "text": "2 Timóteo", "correct": true },
+      { "id": 3, "text": "Tito", "correct": false },
+      { "id": 4, "text": "Gálatas", "correct": false }
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Qual carta foi escrita a respeito de Onésimo, um escravo convertido?",
+    "book": "Filemom",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Tito", "correct": false },
+      { "id": 2, "text": "Filemom", "correct": true },
+      { "id": 3, "text": "Colossenses", "correct": false },
+      { "id": 4, "text": "1 Timóteo", "correct": false }
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Segundo Romanos 1, qual é o principal motivo pelo qual os homens são indesculpáveis diante de Deus?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Porque rejeitaram a Lei de Moisés", "correct": false },
+      { "id": 2, "text": "Porque suprimem a verdade pela injustiça", "correct": true },
+      { "id": 3, "text": "Porque não conheceram os profetas", "correct": false },
+      { "id": 4, "text": "Porque não praticaram circuncisão", "correct": false }
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Em Romanos 2, Paulo afirma que a verdadeira circuncisão é aquela realizada onde?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Na carne", "correct": false },
+      { "id": 2, "text": "No coração, pelo Espírito", "correct": true },
+      { "id": 3, "text": "No templo", "correct": false },
+      { "id": 4, "text": "Na descendência de Abraão", "correct": false }
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Segundo Romanos 4, Abraão foi justificado diante de Deus com base em quê?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Nas obras da Lei", "correct": false },
+      { "id": 2, "text": "Na fé", "correct": true },
+      { "id": 3, "text": "Na circuncisão", "correct": false },
+      { "id": 4, "text": "Nos sacrifícios", "correct": false }
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Em Romanos 5, Paulo estabelece um paralelo entre Cristo e qual personagem do Antigo Testamento?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Moisés", "correct": false },
+      { "id": 2, "text": "Abraão", "correct": false },
+      { "id": 3, "text": "Adão", "correct": true },
+      { "id": 4, "text": "Davi", "correct": false }
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Segundo Romanos 6, o crente foi batizado em quê?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Na Lei", "correct": false },
+      { "id": 2, "text": "Na morte de Cristo", "correct": true },
+      { "id": 3, "text": "No templo", "correct": false },
+      { "id": 4, "text": "Na descendência de Abraão", "correct": false }
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Em Romanos 7, Paulo usa o exemplo do casamento para ilustrar qual verdade espiritual?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "A fidelidade de Deus", "correct": false },
+      { "id": 2, "text": "A libertação da Lei por meio da morte", "correct": true },
+      { "id": 3, "text": "A união entre judeus e gentios", "correct": false },
+      { "id": 4, "text": "A promessa a Abraão", "correct": false }
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Segundo Romanos 8, o que a criação aguarda com grande expectativa?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "O juízo final", "correct": false },
+      { "id": 2, "text": "A manifestação dos filhos de Deus", "correct": true },
+      { "id": 3, "text": "A restauração do templo", "correct": false },
+      { "id": 4, "text": "O retorno da Lei", "correct": false }
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Em Romanos 9, Paulo usa o exemplo de Jacó e Esaú para ensinar qual doutrina?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Justificação pelas obras", "correct": false },
+      { "id": 2, "text": "Eleição soberana de Deus", "correct": true },
+      { "id": 3, "text": "Predestinação baseada em mérito", "correct": false },
+      { "id": 4, "text": "Superioridade cultural de Israel", "correct": false }
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Segundo Romanos 10, a fé vem por meio de quê?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Boas obras", "correct": false },
+      { "id": 2, "text": "Experiências espirituais", "correct": false },
+      { "id": 3, "text": "Ouvir a Palavra de Cristo", "correct": true },
+      { "id": 4, "text": "Tradições dos anciãos", "correct": false }
+    ]
+  },
+  {
+    "id": 45,
+    "question": "Em Romanos 11, Paulo descreve Israel e os gentios usando qual metáfora agrícola?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Videira e ramos", "correct": false },
+      { "id": 2, "text": "Trigo e joio", "correct": false },
+      { "id": 3, "text": "Oliveira e enxerto", "correct": true },
+      { "id": 4, "text": "Semeador e solo", "correct": false }
+    ]
+  }
+]
+]
