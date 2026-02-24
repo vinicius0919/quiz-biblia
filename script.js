@@ -1,8 +1,8 @@
 // ============================
-// VARIÁVEIS GLOBAIS
+// ESTADO GLOBAL
 // ============================
 
-let questions = []; // será carregado do JSON local
+let questions = [];
 let filteredQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
@@ -14,10 +14,10 @@ let playerName = "";
 // ============================
 
 const startScreen = document.getElementById("start-screen");
-
-const startBtn = document.getElementById("start-btn");
 const quizScreen = document.getElementById("quiz-screen");
 const endScreen = document.getElementById("end-screen");
+
+const startBtn = document.getElementById("start-btn");
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const scoreEl = document.getElementById("score");
@@ -26,16 +26,36 @@ const finishBtn = document.getElementById("finish-btn");
 const restartBtn = document.getElementById("restart-btn");
 
 // ============================
-// CARREGAR JSON LOCAL
+// UTIL
 // ============================
 
-// Se estiver usando arquivo questions.json
+const shuffle = (array) => array.sort(() => Math.random() - 0.5);
+
+function showScreen(screen) {
+  [startScreen, quizScreen, endScreen].forEach(s =>
+    s.classList.add("hidden")
+  );
+  screen.classList.remove("hidden");
+}
+
+function resetGameState() {
+  currentQuestionIndex = 0;
+  score = 0;
+  wrongQuestions = [];
+  scoreEl.textContent = 0;
+}
+
+// ============================
+// CARREGAR JSON
+// ============================
+
 fetch("questions.json")
-  .then((res) => res.json())
-  .then((data) => {
+  .then(res => res.json())
+  .then(data => {
     questions = data;
     populateBooks();
-  });
+  })
+  .catch(err => console.error("Erro ao carregar JSON:", err));
 
 // ============================
 // POPULAR LIVROS
@@ -43,11 +63,9 @@ fetch("questions.json")
 
 function populateBooks() {
   const bookSelect = document.getElementById("book");
-  const books = [...new Set(questions.map((q) => q.book))];
+  const books = [...new Set(questions.map(q => q.book))].sort();
 
-  books.sort();
-
-  books.forEach((book) => {
+  books.forEach(book => {
     const option = document.createElement("option");
     option.value = book;
     option.textContent = book;
@@ -58,13 +76,6 @@ function populateBooks() {
 // ============================
 // INICIAR JOGO
 // ============================
-function showScreen(screen) {
-  startScreen.classList.add("hidden");
-  quizScreen.classList.add("hidden");
-  endScreen.classList.add("hidden");
-
-  screen.classList.remove("hidden");
-}
 
 startBtn.addEventListener("click", startGame);
 
@@ -76,32 +87,26 @@ function startGame() {
   const book = document.getElementById("book").value;
   const limit = parseInt(document.getElementById("question-limit").value);
 
-  filteredQuestions = questions.filter(
-    (q) =>
-      (difficulty === "all" || q.level === difficulty) &&
-      (testament === "all" || q.testament === testament) &&
-      (book === "all" || q.book === book),
+  filteredQuestions = questions.filter(q =>
+    (difficulty === "all" || q.level === difficulty) &&
+    (testament === "all" || q.testament === testament) &&
+    (book === "all" || q.book === book)
   );
-
-  // Embaralhar
-  filteredQuestions.sort(() => Math.random() - 0.5);
-
-  if (!isNaN(limit)) {
-    filteredQuestions = filteredQuestions.slice(0, limit);
-  }
 
   if (filteredQuestions.length === 0) {
     alert("Nenhuma questão encontrada com esses filtros.");
     return;
   }
 
-  currentQuestionIndex = 0;
-  score = 0;
-  wrongQuestions = [];
+  shuffle(filteredQuestions);
 
+  if (!isNaN(limit)) {
+    filteredQuestions = filteredQuestions.slice(0, limit);
+  }
+  console.log(difficulty, testament, book, limit)
+  console.log(filteredQuestions, questions)
+  resetGameState();
   showScreen(quizScreen);
-  scoreEl.textContent = 0;
-
   showQuestion();
 }
 
@@ -114,12 +119,14 @@ function showQuestion() {
   answersEl.innerHTML = "";
 
   const current = filteredQuestions[currentQuestionIndex];
+  if (!current) return;
+    console.log("Pergunta atual:", current);
   questionEl.textContent = current.question;
-    console.log(current)
+
   current.answers.forEach((option, index) => {
     const btn = document.createElement("button");
     btn.textContent = option.text;
-    btn.addEventListener("click", () => selectAnswer(index));
+    btn.onclick = () => selectAnswer(index);
     answersEl.appendChild(btn);
   });
 }
@@ -130,33 +137,23 @@ function showQuestion() {
 
 function selectAnswer(index) {
   const current = filteredQuestions[currentQuestionIndex];
-  const buttons = answersEl.querySelectorAll("button");
+  if (!current) return;
 
+  const buttons = answersEl.querySelectorAll("button");
   buttons.forEach(btn => btn.disabled = true);
 
-  const selectedAnswer = current.answers[index];
+  const selected = current.answers[index];
+  if (!selected) return;
 
-  if (!selectedAnswer) return;
+  const correctIndex = current.answers.findIndex(a => a.correct);
 
-  if (selectedAnswer.correct) {
+  if (selected.correct) {
     score++;
     scoreEl.textContent = score;
-
-    if (buttons[index]) {
-      buttons[index].classList.add("correct");
-    }
-
+    buttons[index]?.classList.add("correct");
   } else {
-    if (buttons[index]) {
-      buttons[index].classList.add("wrong");
-    }
-
-    const correctIndex = current.answers.findIndex(a => a.correct);
-
-    if (correctIndex !== -1 && buttons[correctIndex]) {
-      buttons[correctIndex].classList.add("correct");
-    }
-
+    buttons[index]?.classList.add("wrong");
+    buttons[correctIndex]?.classList.add("correct");
     wrongQuestions.push(current);
   }
 
@@ -178,13 +175,13 @@ nextBtn.addEventListener("click", () => {
 });
 
 // ============================
-// ENCERRAR QUIZ
+// FINALIZAR
 // ============================
 
 finishBtn.addEventListener("click", finishQuiz);
 
 function finishQuiz() {
-showScreen(endScreen);
+  showScreen(endScreen);
 
   document.getElementById("player-result").textContent = playerName;
   document.getElementById("final-score").textContent = score;
@@ -192,12 +189,11 @@ showScreen(endScreen);
   document.getElementById("total-wrong").textContent = wrongQuestions.length;
 
   generateReview();
-
   saveHighScore();
 }
 
 // ============================
-// GERAR RELATÓRIO
+// RELATÓRIO
 // ============================
 
 function generateReview() {
@@ -209,54 +205,48 @@ function generateReview() {
     return;
   }
 
-  wrongQuestions.forEach((q) => {
+  wrongQuestions.forEach(q => {
+    const correctAnswer = q.answers.find(a => a.correct);
+
     const div = document.createElement("div");
     div.classList.add("review-item");
 
-    // Encontrar resposta correta corretamente
-    const correctAnswer = q.answers.find(a => a.correct);
-
     div.innerHTML = `
       <p><strong>Pergunta:</strong> ${q.question}</p>
-      <p class="wrong">Sua resposta estava incorreta.</p>
-      <p class="correct">Resposta correta: ${correctAnswer ? correctAnswer.text : "Não encontrada"}</p>
+      <p class="correct">Resposta correta: ${correctAnswer?.text}</p>
       <p><em>${q.book} - ${q.level}</em></p>
     `;
 
     reviewList.appendChild(div);
   });
 }
+
 // ============================
-// SALVAR RECORD
+// RECORD
 // ============================
 
 function saveHighScore() {
   const record = JSON.parse(localStorage.getItem("biblicalHighScore")) || {
     name: "",
-    score: 0,
+    score: 0
   };
 
   if (score > record.score) {
-    localStorage.setItem(
-      "biblicalHighScore",
-      JSON.stringify({
-        name: playerName,
-        score: score,
-      }),
-    );
+    localStorage.setItem("biblicalHighScore", JSON.stringify({
+      name: playerName,
+      score
+    }));
   }
 }
 
 // ============================
 // REINICIAR
 // ============================
+
 restartBtn.addEventListener("click", () => {
   showScreen(startScreen);
+  resetGameState();
 
-  // resetar campos
   document.getElementById("player-name").value = "";
   document.getElementById("question-limit").value = "";
-  score = 0;
-  wrongQuestions = [];
-  scoreEl.textContent = 0;
 });

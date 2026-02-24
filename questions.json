@@ -329,7 +329,6 @@
       { "id": 4, "text": "Zacarias", "correct": false }
     ]
   },
-  [
   {
     "id": 26,
     "question": "Em qual carta Paulo afirma: 'O salário do pecado é a morte'?",
@@ -590,5 +589,4 @@
       { "id": 4, "text": "Semeador e solo", "correct": false }
     ]
   }
-]
 ]
