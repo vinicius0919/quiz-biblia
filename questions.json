@@ -199,7 +199,7 @@
       { "id": 4, "text": "Pérgamo", "correct": false }
     ]
   },
-    {
+  {
     "id": 16,
     "question": "Qual juiz de Israel fez um voto precipitado envolvendo sua filha?",
     "book": "Juízes",
@@ -466,9 +466,21 @@
     "testament": "NT",
     "level": "especialista",
     "answers": [
-      { "id": 1, "text": "Porque rejeitaram a Lei de Moisés", "correct": false },
-      { "id": 2, "text": "Porque suprimem a verdade pela injustiça", "correct": true },
-      { "id": 3, "text": "Porque não conheceram os profetas", "correct": false },
+      {
+        "id": 1,
+        "text": "Porque rejeitaram a Lei de Moisés",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "text": "Porque suprimem a verdade pela injustiça",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Porque não conheceram os profetas",
+        "correct": false
+      },
       { "id": 4, "text": "Porque não praticaram circuncisão", "correct": false }
     ]
   },
@@ -532,7 +544,11 @@
     "level": "especialista",
     "answers": [
       { "id": 1, "text": "A fidelidade de Deus", "correct": false },
-      { "id": 2, "text": "A libertação da Lei por meio da morte", "correct": true },
+      {
+        "id": 2,
+        "text": "A libertação da Lei por meio da morte",
+        "correct": true
+      },
       { "id": 3, "text": "A união entre judeus e gentios", "correct": false },
       { "id": 4, "text": "A promessa a Abraão", "correct": false }
     ]
@@ -587,6 +603,901 @@
       { "id": 2, "text": "Trigo e joio", "correct": false },
       { "id": 3, "text": "Oliveira e enxerto", "correct": true },
       { "id": 4, "text": "Semeador e solo", "correct": false }
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Em Romanos 5, Paulo estabelece um paralelo entre Adão e Cristo. Qual conceito teológico central emerge dessa tipologia?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Representação federal e imputação", "correct": true },
+      { "id": 2, "text": "Justificação pelas obras", "correct": false },
+      { "id": 3, "text": "Predestinação condicional", "correct": false },
+      { "id": 4, "text": "Aniquilacionismo escatológico", "correct": false }
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Em Filipenses 2:6-11, o termo grego 'kenosis' refere-se principalmente a:",
+    "book": "Filipenses",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Esvaziamento funcional na encarnação",
+        "correct": true
+      },
+      { "id": 2, "text": "Perda da natureza divina", "correct": false },
+      { "id": 3, "text": "Abandono da onisciência eterna", "correct": false },
+      { "id": 4, "text": "Transformação ontológica do Logos", "correct": false }
+    ]
+  },
+  {
+    "id": 48,
+    "question": "No livro de Hebreus, o sacerdócio de Cristo é comparado ao de Melquisedeque para enfatizar:",
+    "book": "Hebreus",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Um sacerdócio eterno e superior ao levítico",
+        "correct": true
+      },
+      { "id": 2, "text": "Continuidade direta com Arão", "correct": false },
+      { "id": 3, "text": "Subordinação à Lei mosaica", "correct": false },
+      { "id": 4, "text": "Sacrifícios repetitivos no templo", "correct": false }
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Em Daniel 7, a figura do 'Filho do Homem' possui implicações messiânicas porque:",
+    "book": "Daniel",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Recebe domínio eterno diretamente do Ancião de Dias",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Representa exclusivamente o povo de Israel",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Simboliza apenas um anjo guerreiro",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "É uma metáfora para os impérios gentílicos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "question": "A doutrina da expiação substitutiva penal afirma que:",
+    "book": "Isaías",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Cristo sofreu a penalidade do pecado em lugar dos pecadores",
+        "correct": true
+      },
+      { "id": 2, "text": "A cruz foi apenas exemplo moral", "correct": false },
+      {
+        "id": 3,
+        "text": "A expiação ocorre por méritos humanos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "O sofrimento foi simbólico e não vicário",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "question": "Em João 1:1, a expressão 'o Verbo era Deus' sustenta principalmente qual doutrina?",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "A plena divindade do Logos", "correct": true },
+      { "id": 2, "text": "Subordinação ontológica ao Pai", "correct": false },
+      { "id": 3, "text": "Criação do Filho no tempo", "correct": false },
+      { "id": 4, "text": "Modalismo trinitário", "correct": false }
+    ]
+  },
+  {
+    "id": 52,
+    "question": "A tensão entre soberania divina e responsabilidade humana é claramente evidenciada em:",
+    "book": "Atos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Atos 2:23 na crucificação de Cristo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "A construção do templo de Salomão",
+        "correct": false
+      },
+      { "id": 3, "text": "O êxodo do Egito", "correct": false },
+      { "id": 4, "text": "A divisão do reino de Israel", "correct": false }
+    ]
+  },
+  {
+    "id": 53,
+    "question": "A teologia do Novo Pacto em Jeremias 31 enfatiza principalmente:",
+    "book": "Jeremias",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Internalização da Lei no coração", "correct": true },
+      {
+        "id": 2,
+        "text": "Restabelecimento do sacerdócio levítico",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Centralização do culto em Jerusalém",
+        "correct": false
+      },
+      { "id": 4, "text": "Substituição da graça pela Lei", "correct": false }
+    ]
+  },
+  {
+    "id": 54,
+    "question": "A escatologia amilenista interpreta Apocalipse 20 como:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Um período simbólico do reinado espiritual de Cristo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Mil anos literais futuros após a tribulação",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Um reinado político em Jerusalém terrestre",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Uma restauração exclusiva de Israel nacional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Em Gálatas, Paulo combate o judaísmo legalista defendendo que a justificação ocorre:",
+    "book": "Gálatas",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Pela fé em Cristo e não pelas obras da Lei",
+        "correct": true
+      },
+      { "id": 2, "text": "Pela circuncisão aliada à fé", "correct": false },
+      { "id": 3, "text": "Pela observância do sábado", "correct": false },
+      { "id": 4, "text": "Por mérito progressivo espiritual", "correct": false }
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Em João 1:1, o termo 'Logos' afirma principalmente qual verdade cristológica?",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A preexistência e plena divindade de Cristo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Que Jesus foi criado antes do mundo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Que Cristo é apenas um profeta inspirado",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Que o Logos representa apenas a sabedoria divina impessoal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Colossenses 1:15 chama Cristo de 'primogênito de toda a criação'. Teologicamente isso significa:",
+    "book": "Colossenses",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Supremacia e preeminência sobre toda a criação",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Que Ele foi o primeiro ser criado",
+        "correct": false
+      },
+      { "id": 3, "text": "Que Ele nasceu antes de Adão", "correct": false },
+      {
+        "id": 4,
+        "text": "Que Ele possui natureza angelical superior",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "question": "A união hipostática, conforme afirmada em João 1:14, refere-se a:",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Duas naturezas completas, divina e humana, em uma só pessoa",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Mistura das naturezas formando uma terceira",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Alternância entre natureza divina e humana",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Subordinação ontológica permanente ao Pai",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Em Hebreus 1:3, Cristo é descrito como 'expressão exata do ser de Deus'. Isso enfatiza:",
+    "book": "Hebreus",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A identidade essencial entre o Filho e o Pai",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Uma representação simbólica de Deus",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Uma autoridade delegada temporária",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Uma superioridade apenas funcional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Romanos 1:3-4 apresenta Cristo como descendente de Davi segundo a carne e declarado Filho de Deus com poder. Isso evidencia:",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A distinção entre natureza humana e exaltação messiânica",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Que Cristo se tornou Filho apenas na ressurreição",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Que a divindade foi adquirida após a morte",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Que Ele deixou de ser humano após ressuscitar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Em João 8:58, ao afirmar 'Antes que Abraão existisse, EU SOU', Jesus reivindica:",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Identificação com o nome divino revelado em Êxodo 3:14",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Superioridade apenas cronológica sobre Abraão",
+        "correct": false
+      },
+      { "id": 3, "text": "Autoridade profética especial", "correct": false },
+      {
+        "id": 4,
+        "text": "Metáfora poética sem implicação ontológica",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "question": "1 Timóteo 2:5 descreve Cristo como único mediador. Cristologicamente isso implica:",
+    "book": "1 Timóteo",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Plena participação nas naturezas divina e humana",
+        "correct": true
+      },
+      { "id": 2, "text": "Intermediação angelical superior", "correct": false },
+      {
+        "id": 3,
+        "text": "Autoridade apenas sacerdotal temporária",
+        "correct": false
+      },
+      { "id": 4, "text": "Substituição definitiva do Pai", "correct": false }
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Em Colossenses 2:9, 'nele habita corporalmente toda a plenitude da divindade' afirma:",
+    "book": "Colossenses",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A totalidade da essência divina presente em Cristo encarnado",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Uma presença parcial dos atributos divinos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Uma influência espiritual externa",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "A divindade apenas após a ressurreição",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Hebreus 2:17 afirma que Cristo deveria tornar-se semelhante aos irmãos em todas as coisas. Isso sustenta qual doutrina cristológica?",
+    "book": "Hebreus",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A plena humanidade de Cristo sem pecado",
+        "correct": true
+      },
+      { "id": 2, "text": "A perda temporária da divindade", "correct": false },
+      {
+        "id": 3,
+        "text": "A fusão das naturezas em uma só essência híbrida",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "A inferioridade ontológica do Filho",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Qual é a principal diferença entre Calvinismo clássico e Arminianismo clássico quanto à eleição?",
+    "book": "Romanos",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Calvinismo afirma eleição incondicional; Arminianismo afirma eleição baseada na presciência",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Calvinismo nega eleição; Arminianismo afirma predestinação absoluta",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Ambos afirmam eleição condicional baseada em obras",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Arminianismo afirma dupla predestinação",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "question": "No debate sobre expiação, o que distingue o Calvinismo do Arminianismo?",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Calvinismo defende expiação limitada; Arminianismo defende expiação ilimitada",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Arminianismo defende expiação limitada aos eleitos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Calvinismo afirma que Cristo morreu apenas simbolicamente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Ambos afirmam que todos são automaticamente salvos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "question": "Qual corrente teológica enfatiza a 'graça preveniente' como capacitação universal para responder ao evangelho?",
+    "book": "Tito",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Arminianismo", "correct": true },
+      { "id": 2, "text": "Calvinismo", "correct": false },
+      { "id": 3, "text": "Hiper-calvinismo", "correct": false },
+      { "id": 4, "text": "Agostinianismo estrito", "correct": false }
+    ]
+  },
+  {
+    "id": 204,
+    "question": "O conceito de 'perseverança dos santos' no Calvinismo sustenta que:",
+    "book": "Filipenses",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Os verdadeiramente regenerados perseverarão até o fim",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "A salvação pode ser perdida a qualquer momento",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "A salvação depende exclusivamente do esforço humano contínuo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Não há segurança possível na salvação",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "question": "O Arminianismo clássico ensina que um crente verdadeiro pode:",
+    "book": "Hebreus",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Apostatar e perder a salvação", "correct": true },
+      {
+        "id": 2,
+        "text": "Ser irresistivelmente preservado independentemente da fé",
+        "correct": false
+      },
+      { "id": 3, "text": "Ser salvo sem fé contínua", "correct": false },
+      {
+        "id": 4,
+        "text": "Ser eleito incondicionalmente antes da criação sem possibilidade de queda",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "question": "O Molinismo diferencia-se do Calvinismo ao propor:",
+    "book": "1 Samuel",
+    "testament": "AT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A ciência média de Deus conciliando soberania e liberdade humana",
+        "correct": true
+      },
+      { "id": 2, "text": "Negação da soberania divina", "correct": false },
+      { "id": 3, "text": "Predestinação dupla absoluta", "correct": false },
+      { "id": 4, "text": "Salvação universal automática", "correct": false }
+    ]
+  },
+  {
+    "id": 70,
+    "question": "No Luteranismo clássico, a presença de Cristo na Ceia é entendida como:",
+    "book": "1 Coríntios",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Presença real sacramental (união sacramental)",
+        "correct": true
+      },
+      { "id": 2, "text": "Memorial simbólico apenas", "correct": false },
+      {
+        "id": 3,
+        "text": "Transubstanciação filosófica tomista",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Ausência completa de presença espiritual",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "question": "O Calvinismo clássico entende a depravação total como:",
+    "book": "Efésios",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Incapacidade espiritual total do homem sem regeneração divina",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Ausência completa de consciência moral",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Impossibilidade de praticar qualquer bem civil",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Pecado limitado apenas às ações externas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "question": "A doutrina da graça irresistível no Calvinismo afirma que:",
+    "book": "João",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "O chamado eficaz de Deus resulta necessariamente na conversão dos eleitos",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Toda pessoa recebe graça salvífica idêntica e decisiva",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "A vontade humana sempre prevalece sobre a divina",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Deus salva apenas após consentimento autônomo completo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "question": "Qual tradição sustenta uma compreensão sinergista da salvação?",
+    "book": "Filipenses",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Arminianismo clássico", "correct": true },
+      { "id": 2, "text": "Calvinismo clássico", "correct": false },
+      { "id": 3, "text": "Hiper-calvinismo", "correct": false },
+      { "id": 4, "text": "Monergismo reformado estrito", "correct": false }
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Segundo a interpretação preterista, a Besta de Apocalipse 13 está historicamente associada a qual figura?",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Imperador Nero", "correct": true },
+      { "id": 2, "text": "Constantino", "correct": false },
+      { "id": 3, "text": "Napoleão Bonaparte", "correct": false },
+      { "id": 4, "text": "Martinho Lutero", "correct": false }
+    ]
+  },
+  {
+    "id": 75,
+    "question": "Na visão preterista parcial, a Grande Tribulação de Mateus 24 e Apocalipse está relacionada principalmente a qual evento histórico?",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "A destruição de Jerusalém no ano 70 d.C.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "A queda do Império Romano em 476 d.C.",
+        "correct": false
+      },
+      { "id": 3, "text": "A Reforma Protestante", "correct": false },
+      { "id": 4, "text": "A Primeira Guerra Mundial", "correct": false }
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Na interpretação historicista, as trombetas e selos frequentemente representam:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Eventos progressivos da história da Igreja ao longo dos séculos",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Eventos exclusivamente futuros após o arrebatamento",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Somente eventos espirituais simbólicos sem referência histórica",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Eventos restritos ao período macabeu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "question": "Alguns historicistas identificaram o 'chifre pequeno' de Daniel e a Besta do Apocalipse historicamente com:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "O papado medieval", "correct": true },
+      { "id": 2, "text": "O Império Persa", "correct": false },
+      { "id": 3, "text": "Alexandre, o Grande", "correct": false },
+      { "id": 4, "text": "O Sinédrio judaico", "correct": false }
+    ]
+  },
+  {
+    "id": 78,
+    "question": "Na perspectiva futurista dispensacionalista, o Anticristo será:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Um líder político mundial futuro durante a Grande Tribulação",
+        "correct": true
+      },
+      { "id": 2, "text": "Exclusivamente Nero no século I", "correct": false },
+      {
+        "id": 3,
+        "text": "Uma metáfora para perseguição genérica",
+        "correct": false
+      },
+      { "id": 4, "text": "Constantino no século IV", "correct": false }
+    ]
+  },
+  {
+    "id": 79,
+    "question": "A queda da 'Babilônia' em Apocalipse 17-18 é frequentemente associada por preteristas a:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      { "id": 1, "text": "Roma imperial do primeiro século", "correct": true },
+      {
+        "id": 2,
+        "text": "A Babilônia literal da Mesopotâmia moderna",
+        "correct": false
+      },
+      { "id": 3, "text": "Jerusalém celestial", "correct": false },
+      { "id": 4, "text": "A Revolução Francesa", "correct": false }
+    ]
+  },
+  {
+    "id": 80,
+    "question": "Na leitura idealista, os quatro cavaleiros do Apocalipse simbolizam:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Realidades recorrentes como guerra, fome, peste e conquista ao longo da história",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Quatro generais romanos específicos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Quatro anjos caídos identificáveis historicamente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Quatro impérios exclusivamente futuros",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "question": "Segundo parte da tradição futurista, o Milênio de Apocalipse 20 será:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Um reino literal de mil anos após a segunda vinda de Cristo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "A era da Igreja iniciada em Atos 2",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "O período entre Constantino e a Idade Média",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Um símbolo exclusivo da lei mosaica",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Alguns intérpretes preteristas associam o número 666 ao nome de Nero usando qual método?",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Gematria hebraica aplicada a 'Neron Caesar'",
+        "correct": true
+      },
+      { "id": 2, "text": "Numerologia pitagórica medieval", "correct": false },
+      { "id": 3, "text": "Código romano imperial secreto", "correct": false },
+      { "id": 4, "text": "Cálculo astronômico babilônico", "correct": false }
+    ]
+  },
+  {
+    "id": 84,
+    "question": "Na interpretação amilenista, o Milênio de Apocalipse 20 é entendido como:",
+    "book": "Apocalipse",
+    "testament": "NT",
+    "level": "especialista",
+    "answers": [
+      {
+        "id": 1,
+        "text": "O reinado espiritual presente de Cristo durante a era da Igreja",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Um reino político literal futuro em Jerusalém",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Um período já encerrado no século I",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Um evento restrito ao Antigo Testamento",
+        "correct": false
+      }
     ]
   }
 ]
