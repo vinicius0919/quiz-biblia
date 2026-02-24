@@ -116,6 +116,7 @@ function startGame() {
 
 function showQuestion() {
   nextBtn.classList.add("hidden");
+  finishBtn.classList.add("hidden");
   answersEl.innerHTML = "";
 
   const current = filteredQuestions[currentQuestionIndex];
@@ -156,8 +157,8 @@ function selectAnswer(index) {
     buttons[correctIndex]?.classList.add("correct");
     wrongQuestions.push(current);
   }
-
   nextBtn.classList.remove("hidden");
+  finishBtn.classList.remove("hidden");
 }
 
 // ============================
